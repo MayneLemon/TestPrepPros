@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Test Prep Pros</title>
@@ -25,24 +25,30 @@
         <li><a href="contact.html">Contact Us</a></li>
        </ul>
     </nav>
-
+   
     <main>
         <h2>Contact Us</h2>
         <br>
         Use this form to allow us to get in touch with you within 1 business day!<br>
         * = Required Field
-        <form class="nestedgrid2" action="https://formspree.io/f/mwkyqlgq"
-     method="Post">
+        <form class="nestedgrid2" action="https://formspree.io/f/mknyzjdr" method="POST">
           <div class=div1>
-          Name*<br><input type="text" size="30" placeholder="Jane Doe" autofocus required name="fullname"><br>
-          Email*<br><input type="email" size="30" required name="email"><br>
-          Phone*<br><input type="text" size="20" placeholder="(xxx)xxx-xxxx" name="phone"><br>
-          Website:<br><input type="url" size="40" name="website"><br>
+          Name*<br><input type="text" size="30" placeholder="Jane Doe" autofocus required name="fullname" aria-label="Name"><br>
+          Email*<br><input type="email" size="30" required name="Email" aria-label="email"><br>
+          Phone*<br><input type="text" size="20" placeholder="(xxx)xxx-xxxx" name="phone" aria-label="Phone"><br>
+          Website:<br><input type="url" size="40" name="website" aria-label="website"><br>
           </div>
           <div class="div2">
-            current High School:<br><input type="datalist" size="30" name="current high school"><br>
-            Expected date of entry:<br><input type="date" size="30" name="expected date of entry"><br>
-            number of days/ week desired:<br><input type="number" size="30" name="number of days/week desired" min="1" max="5" step="1" value="2">
+            current High School:<br><input type="datalist" size="30" list="schools" aria-label="current high school"><br><datalist id="schools">
+              <option value="Beavervrook"></option>
+              <option value="Birchwood"></option>
+              <option value="Daytona"></option>
+              <option value="Middlesville"></option>
+              <option value="Hainesville"></option>
+              <option value="other"></option>
+            </datalist>
+            Expected date of entry:<br><input type="date" size="30" name="expected date of entry" aria-label="Expected date of entry"><br>
+            number of days/ week desired:<br><input type="number" size="30" name="number of days/week desired" min="1" max="5" step="1" value="2" aria-label="Number of days/ weeks desired">
             <br><input type="submit" value="Help Me Boost My Score!" class="button"><br>
           </div>
         </form>
